@@ -31,14 +31,15 @@ function ProductDetails() {
         <div
           style={{
             display: "flex",
-            padding: "50px",
+            justifyContent: "center",
+            alignItems: "center",
             gap: "30px",
           }}
         >
           <div>
-            <img src={image} style={{ width: "90%" }} alt="" />
+            <img src={image} style={{ width: "70%" }} alt="" />
           </div>
-          <div>
+          <div style={{ width: "50%" }}>
             <p style={{ fontWeight: "bold", fontSize: "30px" }}>{title}</p>
             <p style={{ fontWeight: "bolder", fontSize: "25px" }}>$ {price}</p>
             <p style={{ fontSize: "20px" }}>{description}</p>
@@ -52,6 +53,7 @@ function ProductDetails() {
                 color: "white",
                 border: "none",
                 borderRadius: "7px",
+                cursor: "pointer",
               }}
             >
               Add to Cart
