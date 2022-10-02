@@ -58,3 +58,41 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.create h2 {
+  padding-left: 200px;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-details {
+  padding-left: 200px;
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+.blog-details p {
+  color: #ff0000;
+  padding-top: 10px;
+}
+
+.blog-details div {
+  padding-right: 200px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
