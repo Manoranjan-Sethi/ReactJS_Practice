@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "name": "dwaD",
+      "age": "22",
+      "address": "a wd AEWF A ",
+      "department": "fullStack",
+      "salary": null,
+      "martial_state": true,
+      "id": 1
+    },
+    {
+      "name": "drgdzRG",
+      "age": "4",
+      "address": "eS fg fgSG ",
+      "department": "backend",
+      "salary": null,
+      "martial_state": "",
+      "id": 2
+    },
+    {
+      "name": "a dad a",
+      "age": "33",
+      "address": "eas  brdg ",
+      "department": "frontend",
+      "salary": "45646",
+      "martial_state": "",
+      "id": 3
+    },
+    {
+      "name": "a dad a",
+      "age": "33",
+      "address": "eas  brdg ",
+      "department": "frontend",
+      "salary": "45646",
+      "martial_state": false,
+      "id": 4
+    },
+    {
+      "name": "a dad a",
+      "age": "33",
+      "address": "eas  brdg ",
+      "department": "frontend",
+      "salary": "45646",
+      "martial_state": true,
+      "id": 5
+    },
+    {
+      "name": "a dad a",
+      "age": "33",
+      "address": "eas  brdg ",
+      "department": "frontend",
+      "salary": "45646",
+      "martial_state": false,
+      "id": 6
+    }
+  ]
+}
