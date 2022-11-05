@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <h1>Axios</h1>
-      {error != "" && <h2>{error}</h2>}
+      {error !== "" && <h2>{error}</h2>}
       <div className="grid">
         {data.map((ele) => {
           return (
