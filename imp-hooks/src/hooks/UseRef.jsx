@@ -5,19 +5,18 @@ function UseRef() {
   //   const [renders, setRenders] = useState(0);
 
   //   useEffect(() => {
-  //     setRenders((e) => e + 1);
-  //   }); goes into infinite loop
-
-  const renders = useRef(0); //creation of mutable variables
+  //     setRenders((e) => e + 1);      //goes into infinite loop
+  //   });
+  const renders = useRef(0);
 
   useEffect(() => {
-    renders.current = renders.current + 1;
+    renders.current = renders.current + 1; //creation of mutable variables
   });
 
-  const element = useRef(); // allows to access DOM elements
+  const element = useRef();
 
   function incrInp() {
-    element.current.style.width = "400px";
+    element.current.style.width = "400px"; // allows to access DOM element
   }
 
   return (
