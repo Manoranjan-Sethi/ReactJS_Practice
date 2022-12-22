@@ -1,7 +1,15 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import ProductComponent from "./ProductComponent";
 
 function ProductList() {
-  return <div>ProductList</div>;
+  const products = useSelector((state) => state);
+  console.log(products);
+  return (
+    <div>
+      <ProductComponent />
+    </div>
+  );
 }
 
 export default ProductList;

@@ -11,6 +11,9 @@
 # production
 /build
 
+#text
+/src/Redux/redux.txt
+
 # misc
 .DS_Store
 .env.local
