@@ -4,30 +4,38 @@ import { Link } from "react-router-dom";
 
 function ProductComponent() {
   const products = useSelector((state) => state.allProducts.products);
-
-  const renderList = products.map((product) => {
-    const { id, title, image, price, category } = product;
-    return (
-      <div
-        key={id}
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3,1fr)",
-          padding: "20px",
-        }}
-      >
-        <Link to={`/product/${id}`}>
-          <div>
-            <img src={image} style={{ width: "20%" }} alt="" />
-            <p style={{ fontWeight: "bold" }}>{title}</p>
-            <p style={{ fontWeight: "bolder" }}>$ {price}</p>
-            <p style={{ fontWeight: "light" }}>{category}</p>
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(3,1fr)",
+        padding: "20px",
+        gap: "20px",
+      }}
+    >
+      {products.map((ele) => (
+        <Link
+          to={`/product/${ele.id}`}
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              paddingTop: "50px",
+            }}
+            key={ele.id}
+          >
+            <img src={ele.image} style={{ width: "50%" }} alt="" />
+            <p style={{ fontWeight: "bold" }}>{ele.title}</p>
+            <p style={{ fontWeight: "bolder" }}>$ {ele.price}</p>
+            <p style={{ fontWeight: "light" }}>{ele.category}</p>
           </div>
         </Link>
-      </div>
-    );
-  });
-  return <>{renderList}</>;
+      ))}
+    </div>
+  );
 }
 
 export default ProductComponent;
